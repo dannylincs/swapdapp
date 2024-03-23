@@ -88,7 +88,7 @@ function changeAmount(e) {
 
   async function fetchPrices(one, two ){
 
-    const res = await axios.get(`http://localhost:3001/tokenPrice`, {
+    const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/tokenPrice`, {
       params: {addressOne: one, addressTwo: two}
     }) //;
  
